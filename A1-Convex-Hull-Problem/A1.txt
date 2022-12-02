@@ -1,0 +1,66 @@
+CMPE/CISC 365 Assignment 1
+
+Due Wednesday, September 28 at 11:59 PM.
+
+In this assignment you'll write code to build the convex hull of a set
+of 2D points.  Undergraduates may work in groups of two.  Graduate
+students must work individually.
+
+1. Get the main.py code running.  READ ALL OF THE CODE AND UNDERSTAND
+   HOW IT WORKS.
+
+2. Modify buildHull() to handle the base cases in which you have two
+   or three points.  In those cases, you should form the hull
+   directly.  To do so, set the 'cwPoint' and 'ccwPoint' fields of
+   each of the two or three points.  These fields should be set to be
+   the points on the hull directly CW and CCW of the point in
+   question.  Do not continue to the next step until you get this
+   working and have tested it visually.
+
+3. Modify buildHull() to handle the recursive case.  This will take
+   time.  At each step of implementation, you should check your
+   algorithm with the visual animation.  Read the code comments to see
+   how that animation works with the display() function.
+
+4. Modify buildHull() to discard the points that are no longer on the
+   hull after each merge.  These points are "discarded" by setting
+   their 'cwPoint' and 'ccwPoint' to None.  Do not remove these points
+   from the 'allPoints' list.  Be careful NOT TO DISCARD points that
+   are on the hull after the merge.
+
+
+TO SUBMIT YOUR WORK:
+
+
+   Submit two files with EXACTLY THESE NAMES.
+
+     README.txt - containing the name, student number, and netID of each
+                  person working on the assignment.  Include here any
+                  comments you have for the TA. 
+
+     main.py    - the modified code, well commented.
+
+   YOU WILL LOSE MARKS IF YOU DO NOT SUBMIT TWO FILES WITH EXACTLY THE
+   NAMES ABOVE.
+
+   IN A GROUP OF TWO, ONLY ONE PERSON MAY SUBMIT THE ASSIGNMENT.  IF
+   YOUR GROUP SUBMITS TWO ASSIGNMENTS, YOU WILL LOSE MARKS.
+
+The programming component of this assignment can be completed in Python as the first, preferred choice. If you are not familiar with Python, then you may use Java.
+
+Your work on this assignment must be submitted by 11:59 PM on Wednesday, September 28, 2022. Find below instructions to upload your work to onQ.
+
+Write your own program(s) using Python. Don't use ready-made source codes form any source; Write your own code. Once you complete your assignment, place all files in a zip file and name it according to the following format:
+
+365-1234 –Assin1.zip  
+
+where 1234 stands for your last 4 digits of your students ID. Notice the extension is “zip.” 
+Then upload  “365-1234 –Assn1.zip ” into Assignment 1 dropbox on onQ. 
+You may upload several times if you wish, however,  onQ keeps only the last uploaded file. The old file will be overwritten by the new uploaded file. Please check your files after uploading.  
+
+An “I uploaded the wrong file” excuse will result in a mark of zero, 
+NO exceptions please!
+
+
+For marking, we will read your code for correctness, clarity, and
+quality, and we will run your code.
